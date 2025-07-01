@@ -1,9 +1,11 @@
-import { ChevronDownIcon } from "lucide-react";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { url: "/home", title: "Home" },
+  { url: "/", title: "Home" },
   { url: "/hotels", title: "Hotels" },
   { url: "/house", title: "House" },
   { url: "/about-us", title: "About Us" },
@@ -11,6 +13,8 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="bg-blue-100">
       <div className="container mx-auto max-sm:px-4 h-19 flex items-center justify-between font-sans">
@@ -29,7 +33,11 @@ export default function Header() {
                 <li key={link.url} className="inline-block text-[0px]">
                   <Link
                     href={link.url}
-                    className="relative inline-block text-center text-grey-500 hover:text-blue-500 transition-all text-[1rem] font-normal hover:font-bold"
+                    className={`relative inline-block text-center hover:text-blue-500 transition-all text-[1rem] hover:font-bold ${
+                      link.url == pathname
+                        ? "text-blue-500 font-bold"
+                        : "font-normal text-grey-500"
+                    }`}
                     title={link.title}
                   >
                     {link.title}
@@ -99,7 +107,7 @@ export default function Header() {
               />
             </div>
           </div>
-          <div className="flex items-center gap-1.5 text-blue bg-white/50 px-3 h-full rounded-3xl">
+          <div className="flex items-center gap-1.5 text-blue-500 bg-white/50 px-3 h-full rounded-3xl">
             <Image
               src="/user_light.svg"
               alt="user logo"
