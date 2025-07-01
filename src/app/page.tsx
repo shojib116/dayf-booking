@@ -1,5 +1,9 @@
-import Image from "next/image";
+import HotelPreview from "@/components/ui/main/hotel-preview";
 
 export default function Home() {
-  return <div>blank canvas</div>;
+  return (
+    <main className="mt-10 font-sans">
+      <HotelPreview />
+    </main>
+  );
 }
