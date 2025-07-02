@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { DM_Sans, Poppins } from "next/font/google";
+import { DM_Sans, Poppins, Urbanist } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/ui/header";
+
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -12,6 +14,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: "400",
+});
+
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -26,9 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${poppins.variable} antialiased`}>
+      <body
+        className={`${dmSans.variable} ${poppins.variable} ${urbanist.variable} antialiased`}
+      >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
