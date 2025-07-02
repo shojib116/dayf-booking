@@ -1,4 +1,4 @@
-import HotelPreview from "@/components/ui/main/hotel-preview";
+import HotelPreview from "@/components/layout/main/hotel-preview";
 
 export default function Home() {
   return (

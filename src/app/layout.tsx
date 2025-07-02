@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Poppins, Urbanist } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/ui/header";
+import Header from "@/components/layout/header";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
