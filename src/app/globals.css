@@ -9,6 +9,7 @@
   --grey-800: #252525;
   --blue-100: #e9f6ff;
   --blue-300: #a5d3f1;
+  --blue-400: #a3d0ee;
   --blue-500: #007dd0;
 }
 
@@ -21,14 +22,15 @@
   --color-grey-800: var(--grey-800);
   --color-blue-100: var(--blue-100);
   --color-blue-300: var(--blue-300);
+  --color-blue-400: var(--blue-400);
   --color-blue-500: var(--blue-500);
 
   --background: var(--white);
   --color: var(--black);
 
   --font-sans: var(--font-dm-sans);
-  --font-poppins: var(--font-poppons);
-  --font-urbanist: var(--font-ubanist);
+  --font-poppins: var(--font-poppins);
+  --font-urbanist: var(--font-urbanist);
 }
 
 @utility container {
