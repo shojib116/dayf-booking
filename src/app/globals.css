@@ -11,6 +11,7 @@
   --blue-300: #a5d3f1;
   --blue-400: #a3d0ee;
   --blue-500: #007dd0;
+  --blue-700: #00548c;
 }
 
 @theme inline {
@@ -24,6 +25,7 @@
   --color-blue-300: var(--blue-300);
   --color-blue-400: var(--blue-400);
   --color-blue-500: var(--blue-500);
+  --color-blue-700: var(--blue-700);
 
   --background: var(--white);
   --color: var(--black);
