@@ -1,3 +1,4 @@
+import AboutProperty from "@/components/layout/main/about-property";
 import HotelAvailibility from "@/components/layout/main/hotel-availability";
 import HotelDetails from "@/components/layout/main/hotel-details";
 import HotelPreview from "@/components/layout/main/hotel-preview";
@@ -8,6 +9,7 @@ export default function Home() {
       <HotelPreview />
       <HotelDetails />
       <HotelAvailibility />
+      <AboutProperty />
     </main>
   );
 }
