@@ -3,7 +3,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export default function HotelDetails() {
   return (
-    <section className="container max-sm:px-4">
+    <section className="container max-sm:px-4 mb-7.5">
       <div className="flex justify-between">
         <div className="min-w-162 min-h-71">
           <Tabs defaultValue="over-view">
