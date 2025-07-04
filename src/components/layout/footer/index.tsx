@@ -100,6 +100,7 @@ export default function Footer() {
               <p className="flex gap-6 items-center text-lg font-sans">
                 Download Our App
                 <span className="flex gap-5">
+
                   <Image
                     src="/play-store.svg"
                     alt="play store icon"
@@ -113,6 +114,7 @@ export default function Footer() {
                     height={34}
                   />
                 </span>
+
               </p>
             </div>
           </div>
