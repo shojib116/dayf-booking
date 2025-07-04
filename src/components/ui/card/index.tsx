@@ -34,7 +34,7 @@ Card.Description = function ({
   className?: string;
 }) {
   return (
-    <div className={`text-[#626262] text-xs font-light mb-3 ${className}`}>
+    <div className={`text-grey-500 text-xs font-light mb-3 ${className}`}>
       {children}
     </div>
   );
