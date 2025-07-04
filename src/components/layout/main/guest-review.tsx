@@ -1,9 +1,15 @@
 "use client";
 
 import Card from "@/components/ui/card";
-import Slider from "@/components/ui/slider";
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
+import {
+  Slider,
+  SliderLeftButton,
+  SliderRightButton,
+  SliderTrack,
+  SliderSlide,
+} from "@/components/ui/slider";
 
 export default function GuestReviews() {
   return (
@@ -15,20 +21,20 @@ export default function GuestReviews() {
       <Slider>
         <div className="flex justify-between mb-5.5 py-2.5 px-20.5">
           <div className="flex gap-3">
-            <Slider.LeftButton className="w-10.5 h-10.5 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center">
+            <SliderLeftButton className="w-10.5 h-10.5 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center">
               <ArrowLeftIcon size={20} />
-            </Slider.LeftButton>
-            <Slider.RightButton className="w-10.5 h-10.5 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center">
+            </SliderLeftButton>
+            <SliderRightButton className="w-10.5 h-10.5 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center">
               <ArrowRightIcon size={20} />
-            </Slider.RightButton>
+            </SliderRightButton>
           </div>
           <button className="p-2.5 border-b border-b-blue-500 flex gap-2 items-center text-blue-500">
             See All.. <ArrowRightIcon size={20} />
           </button>
         </div>
 
-        <Slider.Track>
-          <Slider.Slide>
+        <SliderTrack>
+          <SliderSlide>
             <Card className="max-w-153 h-full">
               <Card.Title>"Breathtaking Views and Luxury Comfort"</Card.Title>
               <Card.Description>
@@ -52,8 +58,8 @@ export default function GuestReviews() {
                 <time className="text-xs">23.10.2024</time>
               </Card.Footer>
             </Card>
-          </Slider.Slide>
-          <Slider.Slide>
+          </SliderSlide>
+          <SliderSlide>
             <Card className="max-w-153 h-full">
               <Card.Title>
                 “Exceptional Stay with Excellent Amenities”
@@ -80,8 +86,8 @@ export default function GuestReviews() {
                 <time className="text-xs">23.10.2024</time>
               </Card.Footer>
             </Card>
-          </Slider.Slide>
-          <Slider.Slide>
+          </SliderSlide>
+          <SliderSlide>
             <Card className="max-w-153 h-full">
               <Card.Title>
                 “Exceptional Stay with Excellent Amenities”
@@ -108,8 +114,8 @@ export default function GuestReviews() {
                 <time className="text-xs">23.10.2024</time>
               </Card.Footer>
             </Card>
-          </Slider.Slide>
-        </Slider.Track>
+          </SliderSlide>
+        </SliderTrack>
       </Slider>
     </section>
   );
