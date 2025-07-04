@@ -1,5 +1,6 @@
 import AboutProperty from "@/components/layout/main/about-property";
 import AreaInfo from "@/components/layout/main/area-info";
+import GuestReviews from "@/components/layout/main/guest-review";
 import HotelAvailibility from "@/components/layout/main/hotel-availability";
 import HotelDetails from "@/components/layout/main/hotel-details";
 import HotelPreview from "@/components/layout/main/hotel-preview";
@@ -12,6 +13,7 @@ export default function Home() {
       <HotelAvailibility />
       <AboutProperty />
       <AreaInfo />
+      <GuestReviews />
     </main>
   );
 }
