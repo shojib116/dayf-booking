@@ -4,6 +4,7 @@ import GuestReviews from "@/components/layout/main/guest-review";
 import HotelAvailibility from "@/components/layout/main/hotel-availability";
 import HotelDetails from "@/components/layout/main/hotel-details";
 import HotelPreview from "@/components/layout/main/hotel-preview";
+import Policies from "@/components/layout/main/policies";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutProperty />
       <AreaInfo />
       <GuestReviews />
+      <Policies />
     </main>
   );
 }
